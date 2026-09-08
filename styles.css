@@ -48,7 +48,7 @@ h3 { margin-bottom:14px; font-size:1.25rem; letter-spacing:-.02em; }
 .department-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:18px; }
 .department-card { overflow:hidden; padding:0; border:1px solid var(--line); border-radius:var(--radius); background:var(--white); color:inherit; font:inherit; text-align:left; cursor:pointer; box-shadow:0 1px 0 rgba(11,23,54,.02); transition:transform 180ms ease,box-shadow 180ms ease,border-color 180ms ease; }
 .department-card:hover { transform:translateY(-5px); border-color:#a9d4ff; box-shadow:var(--shadow); }
-.department-card img { width:100%; height:128px; object-fit:cover; }
+.department-card img { width:100%; height:180px; object-fit:contain; object-position:center; background:#eaf5ff; }
 .card-body { position:relative; display:flex; flex-direction:column; min-height:188px; padding:19px 46px 22px 20px; }
 .card-number { margin-bottom:8px; color:var(--blue); font-size:.72rem; font-weight:900; letter-spacing:.13em; }
 .card-body strong { display:block; margin-bottom:8px; color:var(--navy); font-size:1rem; line-height:1.25; }
