@@ -97,7 +97,7 @@ h1,h2,h3,h4,.card-body strong,.site-nav,.button,.eyebrow,.status,.card-number,.d
 
 /* Landscape frames keep group photos edge-to-edge at every screen width. */
 .department-card img { width:100%; height:auto; min-height:0; aspect-ratio:3/2; object-fit:cover; object-position:50% 30%; }
-.department-card[data-department="membership"] img { aspect-ratio:679/536; object-position:center; }
+.department-card[data-department="membership"] img { aspect-ratio:679/526; object-position:center; }
 .department-card[data-department="relations"] img { aspect-ratio:1009/719; object-position:center; }
 .department-card[data-department="incoming"] img { object-position:50% 20%; }
 .department-card[data-department="finance"] img { object-position:50% 25%; }
