@@ -136,3 +136,14 @@ h1,h2,h3,h4,.card-body strong,.site-nav,.button,.eyebrow,.status,.card-number,.d
 @media(max-width:680px) {
   .dialog-copy { padding:20px 24px 30px; }
 }
+
+/* Match the large Marketing reference while retaining visible introduction space. */
+.dialog-department > img {
+  width:100%; height:min(57vw,64dvh,538px); max-height:none;
+  aspect-ratio:auto; object-fit:cover; object-position:50% 25%;
+}
+.dialog-department > img[src*="membership-experience"] { object-position:50% 85%; }
+.dialog-department > img[src*="public-relations"] { object-position:50% 0%; }
+@media(max-width:680px) {
+  .dialog-department > img { height:min(57vw,48dvh); }
+}
