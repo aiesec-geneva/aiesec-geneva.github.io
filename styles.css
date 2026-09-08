@@ -94,3 +94,18 @@ h3 { margin-bottom:14px; font-size:1.25rem; letter-spacing:-.02em; }
 
 /* Keep display headings and interface labels in Inter. */
 h1,h2,h3,h4,.card-body strong,.site-nav,.button,.eyebrow,.status,.card-number,.department-number,.faq-list summary,.social-links,.footer-inner strong { font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+
+/* Landscape frames keep group photos edge-to-edge at every screen width. */
+.department-card img { width:100%; height:auto; min-height:0; aspect-ratio:3/2; object-fit:cover; object-position:50% 30%; }
+.department-card[data-department="membership"] img { aspect-ratio:679/536; object-position:center; }
+.department-card[data-department="relations"] img { aspect-ratio:1009/719; object-position:center; }
+.department-card[data-department="incoming"] img { object-position:50% 20%; }
+.department-card[data-department="finance"] img { object-position:50% 25%; }
+.department-card[data-department="outgoing"] img { object-position:50% 35%; }
+.department-card[data-department="engage"] img { object-position:center; }
+.department-card[data-department="marketing"] img { aspect-ratio:2048/1172; object-position:center; }
+.department-card[data-department="business"] img { height:auto; aspect-ratio:auto; }
+@media(max-width:680px) {
+  .department-card { display:block; }
+  .department-card img { height:auto; min-height:0; }
+}
