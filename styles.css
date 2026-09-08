@@ -114,3 +114,12 @@ h1,h2,h3,h4,.card-body strong,.site-nav,.button,.eyebrow,.status,.card-number,.d
 .department-card { display:flex; flex-direction:column; justify-content:flex-start; align-items:stretch; }
 .department-card > img { display:block; flex-shrink:0; margin:0; }
 .department-card > .card-body { flex:1; width:100%; }
+
+/* Uniform preview geometry keeps every photo and text block aligned. */
+.department-card[data-department] > img {
+  width:100%; height:auto; aspect-ratio:7/5; min-height:0;
+  object-fit:cover; object-position:50% 25%;
+}
+.department-card[data-department="membership"] > img { object-position:50% 75%; }
+.department-card[data-department="relations"] > img { object-position:50% 0%; }
+.department-card[data-department="marketing"] > img { object-position:50% 35%; }
