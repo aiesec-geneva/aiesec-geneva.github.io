@@ -147,3 +147,10 @@ h1,h2,h3,h4,.card-body strong,.site-nav,.button,.eyebrow,.status,.card-number,.d
 @media(max-width:680px) {
   .dialog-department > img { height:min(57vw,48dvh); }
 }
+
+/* The wider membership photo fills the popup naturally without cropping. */
+.dialog-department > img[src*="membership-experience"] {
+  width:100%; height:auto; max-height:none; aspect-ratio:auto;
+  object-fit:cover; object-position:center;
+}
+.department-card[data-department="membership"] > img { object-position:center; }
